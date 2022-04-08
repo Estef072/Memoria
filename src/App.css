@@ -1,0 +1,33 @@
+.App {
+  background-color:salmon;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marco{
+  width: 1100px;
+  height: 840px;
+  
+}
+.carta{
+  display: inline-block;
+  margin: 5px;
+  height: calc(200px - 10px);
+  width: calc(250px - 10px);
+  cursor: pointer;
+  transform: rotateY(180deg);
+  animation: 2s hideCard linear;
+  transition: transform 0.5s
+
+}
+
+.card:hover{
+  transform: scale(0.98);
+}
+.card-ima{
+  height: calc(200px - 10px);
+  width: calc(250px - 10px);;
+
+}

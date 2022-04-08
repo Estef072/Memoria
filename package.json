@@ -4,7 +4,8 @@
   "description": "Laboratorio 08",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "3369"
@@ -12,10 +13,17 @@
   "author": "Estefania Elvira",
   "license": "ISC",
   "dependencies": {
+    "core-js": "^3.21.1",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
     "react": "^18.0.0",
+    "react-card-flip": "^1.1.5",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.4",
     "babel-preset-env": "^1.7.0",
