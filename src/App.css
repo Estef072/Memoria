@@ -23,6 +23,15 @@
 
 }
 
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.is-inactive {
+  /* visibility: hidden; */
+  opacity: 0;
+}
 .card:hover{
   transform: scale(0.98);
 }
