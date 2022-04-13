@@ -25,28 +25,30 @@ function App() {
   setCartas(cartitas);
   },[])
 
+
   useEffect (()=>{
     checkForMatch (); 
   },[c2]);
 
-  const flipCard = (name, num)=>{
+  const flipCard = (name, num)=> {
     if (c1.name === name && c1.num === num){
       return 0;
     }
+
     if(!c1.name){
-      setC1({name, num})
+      setC1({ name, num });
     }
+
     else if (!c2.name){
-      setC2({name,num})
+      setC2({ name, num });
     }
     return 1;
   }
 
-  const checkForMatch  = () =>{
-    if (c1.name && c2.name){
-      const match =c1.name === c2.name;
-      match ? disableCards () : unflipCards();
-
+  const checkForMatch = () => {
+    if (c1.name && c2.name) {
+      const match = c1.name === c2.name;
+      match ? disableCards() : unflipCards();
     }
   }
 
@@ -60,7 +62,6 @@ function App() {
     rcartas();
   };
     
-
 
   const rcartas = () => {
     setC1  ({});
