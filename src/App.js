@@ -54,18 +54,18 @@ function App() {
 
   const disableCards = () => {
     setDisabledCards([c1.num, c2.num]);
-    rcartas();
+    resetCartas();
   };
 
   const unflipCards = () => {
     setUnflippedCards([c1.num, c2.num]);
-    rcartas();
+    resetCartas();
   };
     
 
-  const rcartas = () => {
+  const resetCartas = () => {
     setC1  ({});
-    setC1 ({});
+    setC2 ({});
   }
 
   return (

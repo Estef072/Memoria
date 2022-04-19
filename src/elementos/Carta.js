@@ -24,7 +24,7 @@ const Carta = ({name, num, frontface, flipCard, unflippedCards, disabledCards })
 
   const handleclick = e =>{
     const value = flipCard(name,num);
-      if(value !==0){
+    if(value !=0){
         setIsFlipped(!isFlipped);
 
       }
