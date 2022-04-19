@@ -47,7 +47,7 @@ function App() {
 
   const checkForMatch = () => {
     if (c1.name && c2.name) {
-      const match = c1.name === c2.name;
+      const match = c1.name == c2.name;
       match ? disableCards() : unflipCards();
     }
   }

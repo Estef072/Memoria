@@ -4,6 +4,7 @@ import atras from '../imagenes/images.png';
 import "../App.css"
 
 
+
 const Carta = ({name, num, frontface, flipCard, unflippedCards, disabledCards }) =>{
   const[isFlipped, setIsFlipped]=useState(false);
   const [hasEvent, setHasEvent] = useState(true);
