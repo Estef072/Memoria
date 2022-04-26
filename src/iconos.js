@@ -5,67 +5,64 @@ import src4 from './imagenes/moana.jpg';
 import src5 from './imagenes/mulan.jpg';
 import src6 from './imagenes/poca.jpg';
 
-
 const cartitas = [
     {
         src: src1,
-        princess: 'Ariel'
+        princess: 'Ariel',
     },
 
     {
         src: src1,
-        princess: 'Ariel'
+        princess: 'Ariel',
     },
-    
     {
         src: src2,
-        princess: 'Malefica'
+        princess: 'Malefica',
     },
 
     {
         src: src2,
-        princess: 'Malefica'
+        princess: 'Malefica',
     },
 
     {
         src: src3,
-        princess: ' Merida'
+        princess: ' Merida',
     },
 
     {
         src: src3,
-        princess: 'Merida'
+        princess: 'Merida',
     },
 
     {
         src: src4,
-        princess: 'Moana'
+        princess: 'Moana',
     },
 
     {
         src: src4,
-        princess: 'Moana'
+        princess: 'Moana',
     },
 
     {
         src: src5,
-        princess: 'Mulan'
+        princess: 'Mulan',
     },
 
     {
         src: src5,
-        player: 'Mulan'
-    },
-      
-    {
-        src: src6,
-        princess: 'Pocahontas'
+        player: 'Mulan',
     },
     {
         src: src6,
-        princess: 'Pocahonntas'
+        princess: 'Pocahontas',
+    },
+    {
+        src: src6,
+        princess: 'Pocahonntas',
     },
 
 ];
 
-export { cartitas }; 
+export {cartitas}

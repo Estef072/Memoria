@@ -1,36 +1,38 @@
-import React,{useState,useEffect} from 'react' ;
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Carta from './elementos/Carta';
-import {cartitas} from './iconos';
+import { cartitas } from './iconos';
 
 function App() {
+    let j;
+    let temp;
     const [cartas, setCartas] = useState([]);
     const [c1, setC1] = useState({});
-    const [c2, setC2]= useState({});
+    const [c2, setC2] = useState({});
     const [unflippedCards, setUnflippedCards] = useState([]);
     const [disabledCards, setDisabledCards] = useState([]);
-    const shuffleArray= (array)=>{
-        for (let i = array.length - 1; i > 0; i--) {
-            let j = Math.floor(Math.random() * (i + 1));
-            let temp = array[i];
+    const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i) {
+            j = Math.floor(Math.random() * (i + 1));
+            temp = array[i];
             array[i] = array[j];
             array[j] = temp;
         }
     };
-    useEffect(() =>  {
+    useEffect(() => {
         shuffleArray(cartitas);
         setCartas(cartitas);
-    },[]);
-    useEffect (()=>{
-        checkForMatch ();
-    },[c2]);
+    }, []);
+    useEffect (()=> {
+        checkForMatch();
+    }, [ c2 ]);
 
     const flipCard = (name, num)=> {
-        if (c1.name === name && c1.num === num){
+        if (c1.name === name && c1.num === num) {
             return 0;
         }
 
-        if(!c1.name){
+        if(!c1.name) {
             setC1({ name, num });
         }
 
@@ -42,7 +44,7 @@ function App() {
 
     const checkForMatch = () => {
         if (c1.name && c2.name) {
-            const match = c1.name == c2.name;
+            const match = c1.name === c2.name;
             match ? disableCards() : unflipCards();
         }
     };
@@ -56,16 +58,14 @@ function App() {
         setUnflippedCards([c1.num, c2.num]);
         resetCartas();
     };
-    
-
     const resetCartas = () => {
-        setC1  ({});
-        setC2 ({});
+        setC1({});
+        setC2({});
     };
 
     return (
-        <div className="App">
-            <div className="marco">{
+        <div className='App'> 
+                <div className="marco">{
                 cartas.map((carta,index) =>(
                     // eslint-disable-next-line react/jsx-key
                     <Carta          
@@ -80,7 +80,7 @@ function App() {
             }
                
 
-            </div>
+            </div>;
         </div>
     );
 }
