@@ -4,8 +4,8 @@
         "es2021": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+        "airbnb",
+        "airbnb/hooks"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -22,10 +22,8 @@
             "error",
             4
         ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
+        "linebreak-style":0,
+
         "quotes": [
             "error",
             "single"
@@ -33,8 +31,6 @@
         "semi": [
             "error",
             "always"
-        ],
-        "camelcase":"error"
-        
+        ]
     }
 }

@@ -7,55 +7,65 @@ import src6 from './imagenes/poca.jpg';
 
 
 const cartitas = [
-  {
-    src: src1,
-    princess: 'Ariel'
-  },
-  {
-    src: src1,
-    princess: 'Ariel'
-  },
-  {
-    src: src2,
-    princess: 'Malefica'
-  },
-  {
-    src: src2,
-    princess: 'Malefica'
-  },
-  {
-    src: src3,
-    princess: ' Merida'
-  },
-  {
-    src: src3,
-    princess: 'Merida'
-  },
-  {
-    src: src4,
-    princess: 'Moana'
-  },
-  {
-    src: src4,
-    princess: 'Moana'
-  },
-  {
-    src: src5,
-    princess: 'Mulan'
-  },
-  {
-    src: src5,
-    player: 'Mulan'
-  },
-  {
-    src: src6,
-    princess: 'Pocahontas'
-  },
-  {
-    src: src6,
-    princess: 'Pocahonntas'
-  },
+    {
+        src: src1,
+        princess: 'Ariel'
+    },
+
+    {
+        src: src1,
+        princess: 'Ariel'
+    },
+    
+    {
+        src: src2,
+        princess: 'Malefica'
+    },
+
+    {
+        src: src2,
+        princess: 'Malefica'
+    },
+
+    {
+        src: src3,
+        princess: ' Merida'
+    },
+
+    {
+        src: src3,
+        princess: 'Merida'
+    },
+
+    {
+        src: src4,
+        princess: 'Moana'
+    },
+
+    {
+        src: src4,
+        princess: 'Moana'
+    },
+
+    {
+        src: src5,
+        princess: 'Mulan'
+    },
+
+    {
+        src: src5,
+        player: 'Mulan'
+    },
+      
+    {
+        src: src6,
+        princess: 'Pocahontas'
+    },
+    {
+        src: src6,
+        princess: 'Pocahonntas'
+    },
 
 ];
 
-export { cartitas } 
+export { cartitas }; 
